@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.images{
+   display: grid; 
+   gap: 10px;
+   padding: 10px;
+}
+.images img{
+    width: 100%;
+    display: block;
+}
+.images{
+    grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 800px){
+    .images{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 500px){
+    .images{
+        grid-template-columns: 1fr;
+    }
+}

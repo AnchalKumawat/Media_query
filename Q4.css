@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 50vh;
+    
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    
+    padding: 10px;
+}
+
+.box{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.box1{
+    background-color: red;
+}
+
+.box2 {
+    background-color: green;
+}
+
+.box3{
+    background-color: blue;
+}
+
+.box4{
+    background-color: orange;
+}
+
+@media (max-width: 600px){
+    .boxes{
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+}
